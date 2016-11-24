@@ -16,4 +16,4 @@ RUN make install
 WORKDIR "/"
 RUN ["/bin/bash","-c","source /usr/local/gromacs/bin/GMXRC"]
 CMD ["gmx","-version"]
-CMD echo "Welcome to Gromacs 4.5.6"
+CMD echo "Welcome to Gromacs 4.6.5"
