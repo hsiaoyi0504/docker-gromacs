@@ -1,0 +1,15 @@
+sudo: required
+os: linux
+language: generic
+services:
+  - docker
+
+install:
+  - cd 4.6.5
+  - docker build -t gromacs .
+
+script:
+  - docker run gromacs grompp -v
+  - docker run gromacs mdrun -v  
+
+env: version=4.6.5
